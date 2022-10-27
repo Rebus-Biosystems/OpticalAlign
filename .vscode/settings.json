@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./src/esper_explore_widgets"
+    ]
+}

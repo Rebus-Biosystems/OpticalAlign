@@ -56,6 +56,30 @@ def argoTif(InFilePath):
     imAvg = cv2.imread(str(InFilePath), cv2.IMREAD_UNCHANGED)
     result = argoSnapZ(imAvg)
     return result
+
+
+def argoNPH_direct(imStack):
+    
+    # Generate result (average image, normalise value, and slide)
+    iChs = range(1, 4+1)
+    iCntPh = 3
+    
+    resultData = []
+    resultNormVal = []    
+    
+    for iCh in iChs:
+    
+        iIdxStartFrame = (iCh - 1) * iCntPh
+        iIdxEndFrame = iIdxStartFrame + iCntPh
+    
+        # averaged image for 3 phases
+        imAvg = np.average(imStack[iIdxStartFrame:iIdxEndFrame,:], axis=0)
+        data, normVal, slide = argoSnapZ(imAvg)
+        resultData.append(data)
+        resultNormVal.append(normVal)
+        
+    return resultData, resultNormVal, slide
+    
         
 def argoNPh(InFilePath):
     """

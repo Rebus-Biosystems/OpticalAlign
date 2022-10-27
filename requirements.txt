@@ -1,0 +1,10 @@
+numpy
+matplotlib
+wxpython
+opencv-python
+scipy
+pandas
+napari[all]
+napari_tools_menu
+magicgui
+

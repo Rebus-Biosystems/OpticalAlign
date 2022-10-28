@@ -1,0 +1,11 @@
+System serial #: 1020
+System model #: 02-103-02-13-11
+
+Acquisition start time: 02/03/2021, 15:31:44
+Stage position (XY): (2.8890, -0.5126) mm
+Stage position (Z): -2633.9 um
+Excitation (nm) - Emission (nm): 532 - 582/75
+Laser power: 2001.1mW
+Camera exposure time per raw image frame: 80 ms
+Number of raw image frames per FOV: 12
+Camera sensor resolution: 2048x2048

@@ -1,0 +1,97 @@
+[tool.briefcase]
+project_name = "SVBeamMeasure_v1.0"
+bundle = "com.example"
+version = "0.0.1"
+url = "https://example.com/svbeammeasure_v10"
+license = "Apache Software License"
+author = 'Siavash Yousefi'
+author_email = "siavash@example.com"
+
+[tool.briefcase.app.svbeammeasure_v10]
+formal_name = "SVBeamMeasure_v1.0"
+description = "A Napari-based UI to perform SVBeam Measurements on the Argolight Slides"
+icon = "src/svbeammeasure_v10/resources/svbeammeasure_v10"
+sources = ['src/svbeammeasure_v10']
+requires = [
+"numpy",
+"matplotlib",
+"opencv-python",
+"scipy",
+"pandas",
+"scikit-image", 
+"napari[all]",
+"napari_tools_menu",
+"napari-console", 
+"napari-svg", 
+"pytest",
+"pathlib", 
+"magicgui[pyqt5]",
+"cookiecutter", 
+"tomlkit", 
+"dask",
+"dask[array]", 
+"imageio", 
+"imagecodecs", 
+"opencv-python",
+"Pillow",
+"setuptools", 
+"tifffile",
+"vispy",
+"wheel", 
+"zarr",
+]
+
+
+[tool.briefcase.app.svbeammeasure_v10.macOS]
+requires = [
+    'std-nslog~=1.0.0'
+]
+
+[tool.briefcase.app.svbeammeasure_v10.linux]
+requires = []
+
+[tool.briefcase.app.svbeammeasure_v10.linux.appimage]
+system_requires = []
+linuxdeploy_plugins = []
+
+[tool.briefcase.app.svbeammeasure_v10.linux.flatpak]
+
+[tool.briefcase.app.svbeammeasure_v10.windows]
+requires = [
+"numpy",
+"matplotlib",
+"opencv-python",
+"scipy",
+"pandas",
+"scikit-image", 
+"napari[all]",
+"napari_tools_menu", 
+"napari-console", 
+"napari-svg", 
+"magicgui[pyqt5]",
+"cookiecutter", 
+"tomlkit", 
+"dask",
+"dask[array]", 
+"imageio", 
+"imagecodecs", 
+"opencv-python",
+"pytest", 
+"Pillow",
+"pathlib",
+"setuptools", 
+"tifffile",
+"vispy",
+"wheel",
+"zarr",
+]
+
+# Mobile deployments
+[tool.briefcase.app.svbeammeasure_v10.iOS]
+supported = false
+
+[tool.briefcase.app.svbeammeasure_v10.android]
+supported = false
+
+[tool.briefcase.app.svbeammeasure_v10.web]
+supported = false

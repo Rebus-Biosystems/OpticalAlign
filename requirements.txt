@@ -7,18 +7,4 @@ pandas
 napari[all]
 napari_tools_menu
 magicgui
-scikit-image
-napari-console
-napari-svg
-pytes
-pathlib
-cookiecutter
-dask
-dask[array]
-mageio
-imagecodecs
-Pillow
-setuptools
-tifffile
-zarr
 

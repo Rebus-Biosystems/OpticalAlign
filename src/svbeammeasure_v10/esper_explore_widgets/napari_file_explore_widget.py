@@ -17,7 +17,7 @@ from pathlib import Path
 import fnmatch
 from napari_tools_menu import register_dock_widget
 
-from .fov_utils import read_lsgd_as_imagestack
+from utils.fov_utils import read_lsgd_as_imagestack
 
 IMG_SIZE_Y = 2048 
 RAW_DATA_FORMATS = ['lsgd', 'lout']

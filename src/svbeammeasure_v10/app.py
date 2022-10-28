@@ -9,15 +9,15 @@ sys.path.insert(0, os.path.join(THIS_SCRIPT_DIR, "SVBeamMeasure"))
 sys.path.insert(0, THIS_SCRIPT_DIR)
 
 import esper_explore_widgets
-import esper_explore_widgets.svbeam
+import SVBeamMeasure.svbeam
 import esper_explore_widgets.napari_file_explore_widget
 
 import SVBeamMeasure.ArgoDataLib 
 import SVBeamMeasure.GaussFitLib 
 
-import esper_explore_widgets.fov_utils
+import utils.fov_utils
 from esper_explore_widgets.napari_file_explore_widget import FolderBrowser
-from esper_explore_widgets.svbeam import SVBeamMeasureUI 
+from SVBeamMeasure.svbeam import SVBeamMeasureUI 
 
   
 def main():

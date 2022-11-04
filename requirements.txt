@@ -10,12 +10,12 @@ magicgui
 scikit-image
 napari-console
 napari-svg
-pytes
+pytest 
 pathlib
 cookiecutter
 dask
 dask[array]
-mageio
+imageio
 imagecodecs
 Pillow
 setuptools
